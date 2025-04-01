@@ -14,6 +14,14 @@ int main() {
     printf("Digite o segundo numero: ");
     scanf("%f", &num2);
 
+    // Verifica se o usuario digitou um operador valido
+    if (operation != '+' && operation != '-' && operation != '*' && operation != '/') {
+        printf("Operacao invalida.\n");
+        return 1; // Encerra o programa com erro
+    }
+    // escolhe a operacao com base no operador digitado pelo usuario
+    // e realiza o calculo correspondente
+
     
 
     switch (operation) {
